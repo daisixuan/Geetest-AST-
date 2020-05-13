@@ -142,11 +142,11 @@ const fs = require('fs');//const fs = require('fs')
 		return typeof AJgjJ.Cyi.WBb === 'function' ? AJgjJ.Cyi.WBb.apply(AJgjJ.Cyi, arguments) : AJgjJ.Cyi.WBb;
 	};
 	function AJgjJ() {}
-//初始方法
+//TODO 初始方法
 var init_func_name = "AJgjJ";
-//数组方法名（DAi）
+//TODO 数组方法名（DAi）
 var Array_func_name = "DAi";
-//空数组方法名（EMf）
+//TODO 空数组方法名（EMf）
 var Array2_func_name = "EMf";
 
 
