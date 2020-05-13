@@ -1,5 +1,6 @@
 "# Geetest-AST-" 
 需要安装node环境
+npm install @babel/core
 按照TODO 的提示修改成自己fullpage的参数
 运行 node ast.js 
 即可一键反混淆
