@@ -142,11 +142,11 @@ const fs = require('fs');//const fs = require('fs')
 		return typeof AJgjJ.Cyi.WBb === 'function' ? AJgjJ.Cyi.WBb.apply(AJgjJ.Cyi, arguments) : AJgjJ.Cyi.WBb;
 	};
 	function AJgjJ() {}
-//TODO 初始方法
+//TODO 替换成当前初始方法
 var init_func_name = "AJgjJ";
-//TODO 数组方法名（DAi）
+//TODO 替换成当前数组方法名（DAi）
 var Array_func_name = "DAi";
-//TODO 空数组方法名（EMf）
+//TODO 替换成当前空数组方法名（EMf）
 var Array2_func_name = "EMf";
 
 
@@ -320,7 +320,10 @@ var jscode = fs.readFileSync("fullpage8.9.5.js", {
 });
 let ast = parser.parse(jscode);
 traverse(ast,visitor);
-let {code} = generator(ast);
+let {code} = generator(ast,{jsescOption:{
+	//自动转义中文
+		minimal:true
+	}});
 //TODO 替换成输出fullpage名字
 fs.writeFile('fullpage8.9.5_1.js', code, (err)=>{});
 
