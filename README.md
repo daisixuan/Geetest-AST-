@@ -1,6 +1,6 @@
 ### 一键反混淆Geetest的混淆JS框架 
 
-#支持反混淆fullpage.js gcaptcha4.js等Geetest框架混淆的JS
+### 支持反混淆fullpage.js gcaptcha4.js等Geetest框架混淆的JS
 
 - 环境依赖
   - nodejs >= v18.15.0
